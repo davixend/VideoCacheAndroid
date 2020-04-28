@@ -2,11 +2,11 @@
 کش کردن ویدیوها در اندروید
 
 
-# used
+# used:
 
 اضافه کردن لایبرری زیر به gradle:
 
-implementation 'com.danikula:videocache:2.7.1'
+'''implementation 'com.danikula:videocache:2.7.1''''
 
 
 ایجاد کلاس اپلیکیشن و اضافه کردن کد زیر به این کلاس:
