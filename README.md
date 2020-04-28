@@ -6,7 +6,7 @@
 
 اضافه کردن لایبرری زیر به gradle:
 
-```
+```gradle
 implementation 'com.danikula:videocache:2.7.1'
 ```
 
@@ -32,7 +32,7 @@ private HttpProxyCacheServer newProxy() {
 
 
 سپس داخل اکتیویتی پلیر خود متد زیر را اضافه کنید:
-```
+```java
 public String cachingUrl(String urlPath) {
 
  return Applications.getProxy(this).getProxyUrl(urlPath, true);
@@ -40,6 +40,6 @@ public String cachingUrl(String urlPath) {
 }
 ```
 و در انتها با صدا زدن این متد لینک ویدیو کش شده را دریافت کنید:
-```
+```java
 Uri mp4Uri = Uri.parse(cachingUrl(videoUrl));
 ```
