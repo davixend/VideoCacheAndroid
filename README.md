@@ -1,17 +1,16 @@
 # VideoCacheAndroid
-<p dir='rtl' align='right'>test</p>
-کش کردن ویدیوها در اندروید
 
+<p dir='rtl' align='right'>کش کردن ویدیوها در اندروید</p>
 
 # used:
 
-اضافه کردن لایبرری زیر به gradle:
+<p dir='rtl' align='right'>اضافه کردن لایبرری زیر به gradle:</p>
 
 ```gradle
 implementation 'com.danikula:videocache:2.7.1'
 ```
 
-ایجاد کلاس اپلیکیشن و اضافه کردن کد زیر به این کلاس:
+<p dir='rtl' align='right'>ایجاد کلاس اپلیکیشن و اضافه کردن کد زیر به این کلاس:</p>
 
 ```java
 private HttpProxyCacheServer proxy;
@@ -31,8 +30,8 @@ private HttpProxyCacheServer newProxy() {
 }
 ```
 
+<p dir='rtl' align='right'>سپس داخل اکتیویتی پلیر خود متد زیر را اضافه کنید:</p>
 
-سپس داخل اکتیویتی پلیر خود متد زیر را اضافه کنید:
 ```java
 public String cachingUrl(String urlPath) {
 
@@ -40,7 +39,8 @@ public String cachingUrl(String urlPath) {
 
 }
 ```
-و در انتها با صدا زدن این متد لینک ویدیو کش شده را دریافت کنید:
+<p dir='rtl' align='right'>و در انتها با صدا زدن این متد لینک ویدیو کش شده را دریافت کنید:</p>
+
 ```java
 Uri mp4Uri = Uri.parse(cachingUrl(videoUrl));
 ```
