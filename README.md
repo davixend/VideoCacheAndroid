@@ -6,17 +6,17 @@
 
 اضافه کردن لایبرری زیر به gradle:
 
-'''implementation 'com.danikula:videocache:2.7.1''''
+implementation 'com.danikula:videocache:2.7.1'
 
 
 ایجاد کلاس اپلیکیشن و اضافه کردن کد زیر به این کلاس:
 
 private HttpProxyCacheServer proxy;
 
-public static HttpProxyCacheServer getProxy(Context context) {
+'''public static HttpProxyCacheServer getProxy(Context context) {
     Applications app = (Applications) context.getApplicationContext();
     return app.proxy == null ? (app.proxy = app.newProxy()) : app.proxy;
-}
+}'''
 
 private HttpProxyCacheServer newProxy() {
     //return new HttpProxyCacheServer(this);
